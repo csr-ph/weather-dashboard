@@ -1,5 +1,4 @@
 // api key: b56c8ec1ddbf5b6f85dc1d09a5204f93 - one call API for OpenWeatherMap
-// api url: https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={apiKey}
 // google maps geocoding api key: AIzaSyAHUffAa7_yU5X8c9jiSKHGraqyvWQjaGQ
 
 // declare variables to use in the urls
@@ -34,9 +33,11 @@ const displayCityTitle = () => {
     document.getElementById("search-btn").addEventListener("click", function() {
         var cityTitleEl = document.getElementById("city-date");
         var date = new Date().toDateString();
+        cityTitleEl.innerText = '';
         cityTitleEl.innerText = city + ' ' + date;
     });
-}
+    
+};
 
 // save data to local storage
 let recentSearches = [];
@@ -46,10 +47,8 @@ const data = JSON.parse(localStorage.getItem('searches'));
 
 console.log(data);
 
+let getStorage = localStorage.getItem('searches');
 
-
-// display local storage data
-let recentSearchesEl = document.querySelector(".recent").innerText;
 
 
 
