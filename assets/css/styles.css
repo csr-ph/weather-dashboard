@@ -1,3 +1,12 @@
 .search {
     height: 40px;
 }
+
+.icon-weather {
+    width: 100px;
+    height: 80px;
+}
+
+#day-1, #day-2, #day-3, #day-4, #day-5 {
+    margin: 3px;
+}

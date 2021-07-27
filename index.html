@@ -19,16 +19,16 @@
             <div class="row align-items-center">
                 <div class="col-4 bg-secondary border text-white">
                     <div class="row">
-                        <textarea class="search" id="city-search" placeholder="Enter a City">
+                        <input class="search" id="city-search" placeholder="Enter a City">
 
-                        </textarea>
+                        </input>
                         <button class="bg-primary text-white" id="search-btn">
                             Search
                         </button>
                     </div>
-                    <div class="col-4">
-                        <div class="row recent">
-                            Placeholder for recent searches
+                    <div class="col-4" id="recent-container">
+                        <div class="row" id="recent">
+                            
                         </div>
                         
                     </div>
@@ -38,6 +38,7 @@
                         <h2 id="city-date">
                             
                         </h2>
+                        <img id="icon-weather" class="icon-weather">
                     </div>
                     <div class="row" id="today-temp">
                         <p id="temp-current">
@@ -59,21 +60,41 @@
 
                         </p>
                     </div>
+                    <div class="row">
+                        <h2>
+                            5-day Forecast
+                        </h2>
+                    </div>
                     <div class="row" id="5-day">
-                        <div class="col-2">
-                            
-                        </div>
-                        <div class="col-2">
-                            
-                        </div>
-                        <div class="col-2">
-                            
-                        </div>
-                        <div class="col-2">
-                            
-                        </div>
-                        <div class="col-2">
+                        <div class="col-2 bg-primary border" id="day-1">
+                            <p class="day-1-text">
 
+                            </p>
+                            <img id="day-1-img">
+                        </div>
+                        <div class="col-2 bg-primary border" id="day-2">
+                            <p class="day-2-text">
+                                
+                            </p>
+                            <img id="day-2-img">
+                        </div>
+                        <div class="col-2 bg-primary border" id="day-3">
+                            <p class="day-3-text">
+                                
+                            </p>
+                            <img id="day-3-img">
+                        </div>
+                        <div class="col-2 bg-primary border" id="day-4">
+                            <p class="day-4-text">
+                                
+                            </p>
+                            <img id="day-4-img">
+                        </div>
+                        <div class="col-2 bg-primary border" id="day-5">
+                            <p class="day-5-text">
+                                
+                            </p>
+                            <img id="day-5-img">
                         </div>
                     </div>
                 </div>
